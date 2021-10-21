@@ -1,5 +1,5 @@
 # Marvel App
-
+[![UT](https://github.com/alexkater/MarvelApp/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/alexkater/MarvelApp/actions/workflows/tests.yml)
 ## Purpose
 This app is just an example on how to use Composable Architecture from pointfree.co
 
