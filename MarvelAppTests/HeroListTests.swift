@@ -17,7 +17,7 @@ class HeroListTests: XCTestCase {
     let scheduler = DispatchQueue.test
 
     // MARK: - Unit Tests
-    
+
     func testLoadHerosSucceed() {
         let apiService = ApiServiceMock()
         let storageService = StorageServiceMock()

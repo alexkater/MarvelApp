@@ -23,7 +23,7 @@ enum DetailAction: Equatable {
 
 struct DetailEnvironment {}
 
-let detailReducer = Reducer<DetailState, DetailAction, DetailEnvironment> { state, action, environment in
+let detailReducer = Reducer<DetailState, DetailAction, DetailEnvironment> { state, action, _ in
 
     switch action {
     case .alertCancelTapped:

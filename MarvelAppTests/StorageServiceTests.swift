@@ -16,6 +16,6 @@ class StorageServiceTests: XCTestCase {
 
         XCTAssertNotNil(UserDefaults.standard.data(forKey: StorageService.StorageKey.characters.rawValue))
 
-        XCTAssertEqual(storageService.retrieveChars() , [.mock(with: 1)])
+        XCTAssertEqual(storageService.retrieveChars(), [.mock(with: 1)])
     }
 }

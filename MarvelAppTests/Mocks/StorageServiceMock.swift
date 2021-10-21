@@ -19,4 +19,3 @@ final class StorageServiceMock: StorageServiceProtocol {
         savedChars
     }
 }
-

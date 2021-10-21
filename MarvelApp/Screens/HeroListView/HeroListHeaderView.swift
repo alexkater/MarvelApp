@@ -39,7 +39,7 @@ struct HeroListHeaderView: View {
                                                      identifier: viewStore.imageURL.absoluteString,
                                                      empty: { Image.heroListItemPlaceholder.rounded() },
                                                      inProgress: { _ in  Image.heroListItemPlaceholder.rounded() },
-                                                     failure: { _,_  in EmptyView() },
+                                                     failure: { _, _  in EmptyView() },
                                                      content: { $0.rounded(with: 72) })
                                             Text(viewStore.name)
                                                 .font(Font.system(.footnote))

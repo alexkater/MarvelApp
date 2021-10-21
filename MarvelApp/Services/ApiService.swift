@@ -50,7 +50,7 @@ class ApiService: ApiServiceProtocol {
 
         return URLSession.shared
              .dataTaskPublisher(for: url)
-             .tryMap() { element -> Data in
+             .tryMap { element -> Data in
                  guard let httpResponse = element.response as? HTTPURLResponse,
                        httpResponse.statusCode == 200 else {
                            throw URLError(.badServerResponse)

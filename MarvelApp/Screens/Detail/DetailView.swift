@@ -20,9 +20,13 @@ struct DetailView: View {
                     URLImage(
                         viewStore.state,
                         identifier: viewStore.absoluteString,
-                        empty: { Image.heroListItemPlaceholder.resizable().aspectRatio(1, contentMode: .fit) },
-                        inProgress: { _ in  Image.heroListItemPlaceholder.resizable().aspectRatio(1, contentMode: .fit) },
-                        failure: { _,_  in EmptyView() },
+                        empty: {
+                            Image.heroListItemPlaceholder.resizable().aspectRatio(1, contentMode: .fit)
+                        },
+                        inProgress: { _ in
+                            Image.heroListItemPlaceholder.resizable().aspectRatio(1, contentMode: .fit)
+                        },
+                        failure: { _, _  in EmptyView() },
                         content: { $0.resizable().aspectRatio(1, contentMode: .fit) }
                     )
                         .animation(.easeInOut, value: 1)

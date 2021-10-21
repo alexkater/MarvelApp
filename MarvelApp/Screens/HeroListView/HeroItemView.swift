@@ -19,7 +19,7 @@ struct HeroItemView: View {
                          identifier: character.imageURL.absoluteString,
                          empty: { Image.heroListItemPlaceholder.rounded() },
                          inProgress: { _ in  Image.heroListItemPlaceholder.rounded() },
-                         failure: { _,_  in EmptyView() },
+                         failure: { _, _  in EmptyView() },
                          content: { $0.rounded() })
                     .frame(width: 48, height: 48)
                 Text(character.name)

@@ -23,8 +23,7 @@ struct Config: ConfigProtocol {
            let dictionary = NSDictionary(contentsOfFile: path),
            let timestamp = (dictionary["timestamp"] as? String),
            let apiKey = (dictionary["apiKey"] as? String),
-           let hash = (dictionary["hash"] as? String)
-        {
+           let hash = (dictionary["hash"] as? String) {
             self.timestamp = timestamp
             self.apiKey = apiKey
             self.hash = hash

@@ -90,8 +90,6 @@ struct HeroListView: View {
     }
 }
 
-
-
 struct HeroListView_Previews: PreviewProvider {
 
     static var previews: some View {
@@ -121,7 +119,7 @@ struct HeroListView_Previews: PreviewProvider {
                             .mock(with: 6),
                             .mock(with: 7),
                             .mock(with: 8),
-                            .mock(with: 9),
+                            .mock(with: 9)
                         ]
                     )
                 ),

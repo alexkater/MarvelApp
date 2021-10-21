@@ -50,7 +50,10 @@ class CharacterResponseTest: XCTestCase {
         XCTAssertEqual(character?.id, 1011334)
         XCTAssertEqual(character?.name, "3-D Man")
         XCTAssertEqual(character?.description, "")
-        XCTAssertEqual(character?.imageURL, URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784/standard_fantastic.jpg"))
+        XCTAssertEqual(
+            character?.imageURL,
+            URL(string: "http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784/standard_fantastic.jpg")
+        )
     }
 
     func testCodingCharacter() throws {
